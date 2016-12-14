@@ -188,6 +188,7 @@ func mainAction(c *cli.Context) {
 func build(builder gin.Builder, runner gin.Runner) {
 	st := time.Now()
 	logger.info.Println("Build started")
+	logger.info.Println("Hello Neko")
 	if err := builder.Build(); err != nil {
 		logger.info.Println("ERROR! Build failed")
 		logger.info.Println(builder.Errors())
